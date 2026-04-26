@@ -2,8 +2,8 @@
 
 ## Reporting / Bildirim
 
-Güvenlik açıkları için: **medya@kesif.org** (public issue **açmayın**)
-Security issues: **medya@kesif.org** (do **not** open public issues)
+Güvenlik açıkları için: **bilgi@mustafayilmaz.art** (public issue **açmayın**)
+Security issues: **bilgi@mustafayilmaz.art** (do **not** open public issues)
 
 Yanıt 72 saat içinde, kritik düzeltme 14 gün hedefiyle.
 
