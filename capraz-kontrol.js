@@ -30,8 +30,9 @@ const configPath = path.join(__dirname, "config.json");
 const config = JSON.parse(fs.readFileSync(configPath, "utf8"));
 
 // ─── .env Yükleyici ──────────────────────────────────────────────────────────
-// API key'leri MCP .env dosyasından oku ve process.env'e yükle
-const ENV_FILE = config.envFile || "D:\\MCP\\.env";
+// API key'leri .env dosyasından oku ve process.env'e yükle
+// Default: bu script'in bulunduğu dizindeki .env (taşınabilir)
+const ENV_FILE = config.envFile || path.join(__dirname, ".env");
 function _loadEnv() {
   try {
     const lines = fs.readFileSync(ENV_FILE, "utf8").split(/\r?\n/);

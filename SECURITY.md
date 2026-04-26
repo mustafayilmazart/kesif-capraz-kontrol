@@ -20,7 +20,7 @@ v1.1 roadmap: `spawnSync` çağrısı argüman array'iyle yapılacak (komut enje
 
 ### API Anahtarları (Cross-Provider Leak)
 
-Mevcut sürüm tüm `process.env`'i her CLI'a geçirir. Yani Claude CLI çalıştırıldığında `OPENAI_API_KEY` de görünür durumdadır. Bu **provider-level isolation eksikliğidir**.
+v1.0 itibarıyla `_filteredEnv(provider)` fonksiyonu ile per-CLI key whitelist uygulanır. Cross-provider key leak riski **kapatıldı**.
 
 **Mitigation:** Sadece kullandığınız provider'ı `aktifAIlar`'da `true` yapın; gereksiz `*_API_KEY`'leri `.env`'den kaldırın.
 
