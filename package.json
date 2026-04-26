@@ -11,7 +11,7 @@
     "ck": "./capraz-kontrol.js"
   },
   "keywords": ["ai", "code-review", "cli", "gemini", "codex", "claude"],
-  "author": "Mustafa Yılmaz — kesif.org",
+  "author": "Mustafa Yılmaz <bilgi@mustafayilmaz.art>",
   "license": "MIT",
   "engines": {
     "node": ">=18.0.0"
